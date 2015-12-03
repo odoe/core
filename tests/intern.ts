@@ -38,10 +38,10 @@ export const capabilities = {
 // OnDemand. Options that will be permutated are browserName, version, platform, and platformVersion; any other
 // capabilities options specified for an environment will be copied as-is
 export const environments = [
-	{ browserName: 'internet explorer', version: [ '9.0', '10.0', '11.0' ], platform: 'Windows 7' },
+	{ browserName: 'IE', version: [ '9', '10', '11' ], platform: 'Windows' },
 	/*{ browserName: 'microsoftedge', platform: 'Windows 10' },*/
-	{ browserName: 'firefox', platform: 'Windows 10' },
-	{ browserName: 'chrome', platform: 'Windows 10' },
+	{ browserName: 'Firefox', platform: 'Windows' },
+	{ browserName: 'Chrome', platform: 'Windows' },
 	/*{ browserName: 'safari', version: '9', platform: 'OS X 10.11' },
 	{ browserName: 'android', platform: 'Linux', version: '4.4', deviceName: 'Google Nexus 7 HD Emulator' },
 	{ browserName: 'iphone', version: '9.1', deviceName: 'iPhone 6' }*/
@@ -51,7 +51,7 @@ export const environments = [
 export const maxConcurrency = 2;
 
 // Name of the tunnel class to use for WebDriver tests
-export const tunnel = 'SauceLabsTunnel';
+export const tunnel = 'BrowserStackTunnel';
 
 // Support running unit tests from a web server that isn't the intern proxy
 export const initialBaseUrl: string = (function () {
